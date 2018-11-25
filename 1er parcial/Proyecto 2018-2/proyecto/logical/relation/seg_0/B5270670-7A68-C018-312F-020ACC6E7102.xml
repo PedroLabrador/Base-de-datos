@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Familiares_Personas_FK" directorySegmentName="seg_0" id="B5270670-7A68-C018-312F-020ACC6E7102">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 20:56:55 UTC</createdTime>
+<generatorID>C18B1728-EB75-0D05-BEBD-60CED770CDDE</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="7D7A7C49-C410-FCA4-9D1B-0F8730D97204" value="true"/>
+</engineerTo>
+<sourcePk>1AADD61D-6914-A3C1-3A06-EB7389C5CF24</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>967665D6-C366-5211-D486-1DB2C898898D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>BB3A1CA2-7406-3CA0-9AE5-1AD61E7E3FBB</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

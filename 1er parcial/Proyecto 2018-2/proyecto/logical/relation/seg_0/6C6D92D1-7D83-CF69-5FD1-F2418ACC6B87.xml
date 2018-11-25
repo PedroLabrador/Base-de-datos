@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Clientes_Personas_FK" directorySegmentName="seg_0" id="6C6D92D1-7D83-CF69-5FD1-F2418ACC6B87">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 20:56:55 UTC</createdTime>
+<generatorID>D1033962-FBA7-96AA-7F45-124B14294C50</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="7D7A7C49-C410-FCA4-9D1B-0F8730D97204" value="true"/>
+</engineerTo>
+<sourcePk>1AADD61D-6914-A3C1-3A06-EB7389C5CF24</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>967665D6-C366-5211-D486-1DB2C898898D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>8191863F-2103-5262-CAE6-E1426C3FE835</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7CD0C96A-578C-C8E1-1494-11500281C842" name="Citas">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 20:56:55 UTC</createdTime>
+<generatorID>A65F8712-4B7B-54A6-576D-54AC985807D1</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="7D7A7C49-C410-FCA4-9D1B-0F8730D97204" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="0B11B46D-83D6-1AFC-20C8-8A24983BFA50">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 20:56:55 UTC</createdTime>
+<generatorID>09989D0F-B348-6002-7673-1D8C2328EF46</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="7D7A7C49-C410-FCA4-9D1B-0F8730D97204" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Fecha" id="B7C3AF2C-D11B-8FDB-A8D2-E98A847A1919">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 20:56:55 UTC</createdTime>
+<generatorID>DED43671-A88C-F32F-E2DB-F3DE30693CDC</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="7D7A7C49-C410-FCA4-9D1B-0F8730D97204" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D4CDBEC5-1EF7-1600-7B8A-7CF6977C13CB" name="Citas PK">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 20:56:55 UTC</createdTime>
+<generatorID>BFE021DB-0A8A-F9C4-9994-FB16B0C7F029</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="7D7A7C49-C410-FCA4-9D1B-0F8730D97204" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0B11B46D-83D6-1AFC-20C8-8A24983BFA50</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

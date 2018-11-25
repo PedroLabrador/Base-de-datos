@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A4D36916-C5C9-0787-F04D-2723A7E37687" name="Subservicios">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 20:56:55 UTC</createdTime>
+<generatorID>C0B2756F-45C1-4728-FBED-484795096461</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="7D7A7C49-C410-FCA4-9D1B-0F8730D97204" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="2803B050-21FF-3FEC-7F2F-A776E79889D1">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 20:56:55 UTC</createdTime>
+<generatorID>2C5272D7-D528-DE9E-15F8-A8684E3B3CCB</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="7D7A7C49-C410-FCA4-9D1B-0F8730D97204" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Servicios id" id="93F65BAE-F317-4E3F-4A26-16D64712A62F">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 20:56:55 UTC</createdTime>
+<generatorID>8CF0BD1A-9D3E-26B8-39BD-B58F92689333</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="7D7A7C49-C410-FCA4-9D1B-0F8730D97204" value="true"/>
+</engineerTo>
+<referedAttribute>CF3EC09E-57B8-94C6-FD43-8CE9F40FCA4B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8DA55581-0247-9058-88B3-546BBC9BDB74" name="Subservicios PK">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 20:56:55 UTC</createdTime>
+<generatorID>A68D9B8A-AEAB-4C9F-6B76-4C00326B5F45</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="7D7A7C49-C410-FCA4-9D1B-0F8730D97204" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2803B050-21FF-3FEC-7F2F-A776E79889D1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="322DC2F4-FAF3-FABF-F106-09B10622CADE" name="Servicios_Registros">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 19:57:44 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Registros_id" id="F23631D8-1B04-2DDC-9E0E-8D622F0CD515">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 20:20:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="90FB0456-E0DA-61FE-CBEC-935496932521" referredColumn="F1624A2B-857C-F857-AB4A-1F42A571C13F"/>
+</associations>
+</Column>
+<Column name="Servicios_id" id="B64E52BF-E675-F0E3-E852-A845DDFACA6B">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 20:20:28 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E0A8BB28-29DA-022A-E540-45D0559EE7EF" referredColumn="3416E6F5-50B2-B27B-2505-788053D2002E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="600A2C58-AAD7-F893-C147-90B205BFCD05" name="Servicios_Registros_FK">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 20:20:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F23631D8-1B04-2DDC-9E0E-8D622F0CD515"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F626A294-9179-1278-3B4B-36B57D8C60D4" name="Registros_Servicios_FK">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 20:20:28 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B64E52BF-E675-F0E3-E852-A845DDFACA6B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

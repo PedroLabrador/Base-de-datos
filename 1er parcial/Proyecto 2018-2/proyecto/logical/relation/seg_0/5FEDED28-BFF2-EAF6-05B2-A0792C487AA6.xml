@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Turnos_Horarios_FK" directorySegmentName="seg_0" id="5FEDED28-BFF2-EAF6-05B2-A0792C487AA6">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 20:56:55 UTC</createdTime>
+<generatorID>9D5B487C-C189-EE9C-CD93-178F129F167E</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="7D7A7C49-C410-FCA4-9D1B-0F8730D97204" value="true"/>
+</engineerTo>
+<sourcePk>7A75AF52-B0FB-A5FD-4D71-DF5319AAEABD</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7BC55D05-6E14-D128-356B-BEF318B5B6EA</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7B4A24E4-82BE-1153-D7AF-1E8BBB1CFCAB</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

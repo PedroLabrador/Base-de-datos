@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B71F0719-7F74-84B8-2123-275F4CFEBDB9" name="Especialidades">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 20:21:07 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<ordsAlias>table_13</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="E0C8C402-F21B-4497-1C5C-B60D64053044">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 20:29:40 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tipo_especialidad" id="C91E65E0-9644-083E-8D9F-FA19A5E6BB1C">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 20:29:40 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2D66CD53-06AA-0A95-734B-E89B56E3BA6A" name="Especialidades_PK">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 20:29:40 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E0C8C402-F21B-4497-1C5C-B60D64053044"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="19CDF2C9-9B68-D995-F41F-E0E2917CBF1A" name="Especialidades__UN">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 20:29:49 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C91E65E0-9644-083E-8D9F-FA19A5E6BB1C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

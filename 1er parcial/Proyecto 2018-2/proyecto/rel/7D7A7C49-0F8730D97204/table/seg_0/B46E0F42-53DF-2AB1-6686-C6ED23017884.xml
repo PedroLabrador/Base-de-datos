@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B46E0F42-53DF-2AB1-6686-C6ED23017884" name="Turnos">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 20:26:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<ordsAlias>table_15</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Empleados_id" id="928F855C-669A-84A1-9C27-65766FE9B5F7">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 20:28:55 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CB8F2544-FCE0-4630-FBE6-94C1D7E48DCA" referredColumn="E78047AD-9096-D222-1A40-63C49B39C486"/>
+</associations>
+</Column>
+<Column name="Horarios_id" id="AB81A02C-59AA-D051-18DA-7A358F249F8D">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 20:28:58 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9D5B487C-C189-EE9C-CD93-178F129F167E" referredColumn="0C8A404F-617F-3F32-B181-3BD22EC7C385"/>
+</associations>
+</Column>
+<Column name="Zona" id="CDF59E73-5123-0CB5-B651-4E6AF5AB3C00">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-11 17:03:12 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<ownDataTypeParameters>32,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="08C1B700-8C51-1611-1898-A7CAF5050A61" name="Turnos_Empleados_FK">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 20:28:55 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="928F855C-669A-84A1-9C27-65766FE9B5F7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="45521EBF-AAA6-4EF5-69A0-008B0D8AFDFD" name="Turnos_Horarios_FK">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 20:28:58 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB81A02C-59AA-D051-18DA-7A358F249F8D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

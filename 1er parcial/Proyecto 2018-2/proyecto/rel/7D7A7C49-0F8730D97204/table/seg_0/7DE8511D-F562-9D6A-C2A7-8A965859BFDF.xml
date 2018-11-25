@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7DE8511D-F562-9D6A-C2A7-8A965859BFDF" name="Pacientes">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 19:09:53 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Citas_id" id="41D57A99-70CB-8C0E-F769-C1EB19B38D75">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 19:31:04 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BBA4DE3D-A0DC-0515-DADB-71DDE7C16FBB" referredColumn="09989D0F-B348-6002-7673-1D8C2328EF46"/>
+</associations>
+</Column>
+<Column name="Personas_id" id="7ECBE85C-4E44-4956-4612-01E948145614">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 19:31:06 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="824622F7-BB47-2AC8-3822-6B3985007CCB" referredColumn="18CDBAB3-4B12-8425-4DB3-ED4AAA01D3FC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5ACAD194-A7BA-930D-6DA3-B388AC7A636F" name="Pacientes_Citas_FK">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 19:31:04 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="41D57A99-70CB-8C0E-F769-C1EB19B38D75"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1AC1047F-D8F1-A26F-D7E2-B86B3B3020D3" name="Pacientes_Personas_FK">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 19:31:06 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7ECBE85C-4E44-4956-4612-01E948145614"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

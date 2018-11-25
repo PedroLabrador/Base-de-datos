@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="106E0C24-66FE-6F28-1708-9BCB6A8E4D27" name="Servicios">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 19:06:37 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="3416E6F5-50B2-B27B-2505-788053D2002E">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 19:06:51 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="25854CCA-D8B5-613A-3A33-94874795C348">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 19:07:09 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Telefono" id="764DD430-2F51-913B-E396-764089402519">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 19:08:09 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tipo" id="CD335D6B-64B9-7F94-3A10-D2B046F369D8">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 19:08:09 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>64</dataTypeSize>
+<ownDataTypeParameters>64,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Porcentaje" id="6FAC098D-D427-B052-6F14-01837748C9E4">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 19:08:09 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>16</dataTypePrecision>
+<ownDataTypeParameters>,16,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A46EEF43-47A3-0A43-42DB-293E3D76EA9F" name="Servicios_PK">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 19:06:51 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3416E6F5-50B2-B27B-2505-788053D2002E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="26AB68CF-2AB7-52E7-6470-0CB1A80A869F" name="Servicios__UN">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 19:08:59 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="25854CCA-D8B5-613A-3A33-94874795C348"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

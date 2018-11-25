@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Atendedores_Citas_FK" directorySegmentName="seg_0" id="434C046B-AF94-9435-C207-A860262B1546">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 20:56:55 UTC</createdTime>
+<generatorID>C7EA2799-AACF-1C51-DF9D-D7AEC154E87B</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="7D7A7C49-C410-FCA4-9D1B-0F8730D97204" value="true"/>
+</engineerTo>
+<sourcePk>D4CDBEC5-1EF7-1600-7B8A-7CF6977C13CB</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7CD0C96A-578C-C8E1-1494-11500281C842</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>111AAE5C-E242-71BE-3BF6-CD30EE6E8771</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

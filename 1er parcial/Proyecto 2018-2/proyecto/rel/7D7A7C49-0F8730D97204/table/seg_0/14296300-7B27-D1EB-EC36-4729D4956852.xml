@@ -1,0 +1,158 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="14296300-7B27-D1EB-EC36-4729D4956852" name="Personas">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 18:43:59 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="18CDBAB3-4B12-8425-4DB3-ED4AAA01D3FC">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 18:44:31 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Correo" id="567B1AFC-DFEA-5D8E-DE45-628587BF6290">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 18:45:36 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<ownDataTypeParameters>256,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Familiares_id" id="DF9DFA9A-1778-0D42-DEAC-CD80FC082FB8">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 18:46:29 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0C92960F-A41F-D195-3492-1B226307DF53" referredColumn="5F8F5864-16E9-B9A9-7891-0A7B16A6AED8"/>
+</associations>
+</Column>
+<Column name="Nombre" id="ACC9C672-8EFF-9CB6-002F-2839221298A7">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 18:47:09 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Apellido" id="01D52444-F8E1-3651-ECC2-D39C6B4D4A0A">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 18:47:09 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha_Nacimiento" id="CC48CC88-AA1D-FD6B-66EF-622D24D83085">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 18:47:09 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Telefono" id="648265DD-6B94-C5DB-AFCA-0CC4A1ED8B98">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 18:47:09 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Genero" id="F3666CBC-9F85-6E87-3BA8-922CB0F28B2A">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 18:47:09 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<ownDataTypeParameters>32,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Direccion" id="F5D069C5-197D-55C2-4337-50B080E6A1F9">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 18:47:09 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tipo_Sangre" id="4B1C9321-5594-E8E2-16F3-9CB64EFC42A8">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 18:47:09 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<ownDataTypeParameters>32,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E917981C-715F-084D-35E8-B8286EB1A349" name="Persona_PK">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 18:44:31 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="18CDBAB3-4B12-8425-4DB3-ED4AAA01D3FC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C2AAB85F-8C16-77B7-EB8F-3CE8D1ED3A7B" name="Personas__UN">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 19:01:47 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="567B1AFC-DFEA-5D8E-DE45-628587BF6290"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4F0921B8-AC15-F8E1-93CD-E44D3E67EC71" name="Personas_Familiares_FK">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 19:23:15 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DF9DFA9A-1778-0D42-DEAC-CD80FC082FB8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

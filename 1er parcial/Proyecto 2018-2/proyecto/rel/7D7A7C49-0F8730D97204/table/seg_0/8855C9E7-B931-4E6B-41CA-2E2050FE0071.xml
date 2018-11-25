@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8855C9E7-B931-4E6B-41CA-2E2050FE0071" name="Servicios_Citas">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 19:31:18 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<ordsAlias>table_8</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Citas_id" id="84E8B485-A034-0063-BF8C-90289BC0876E">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 19:31:47 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0B877A4F-65E8-4691-F2C7-2A0E46086D00" referredColumn="09989D0F-B348-6002-7673-1D8C2328EF46"/>
+</associations>
+</Column>
+<Column name="Servicios_id" id="6FEDD924-129E-1512-9C29-260F2C6E80EE">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 19:31:49 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7D65210A-D1A3-0908-662F-0FE74A66D67C" referredColumn="3416E6F5-50B2-B27B-2505-788053D2002E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4BA6B21E-6607-4233-DB6F-4C07196D7C78" name="Servicios_Citas_FK">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 19:31:47 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="84E8B485-A034-0063-BF8C-90289BC0876E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D489EC65-F4FD-A69A-5547-D4494C50CFE0" name="Citas_Servicios_FK">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 19:31:49 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6FEDD924-129E-1512-9C29-260F2C6E80EE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6AC2CAD0-7EA9-1FCF-9A76-9B5E9E8D7FA8" name="Personal">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 20:31:09 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<ordsAlias>table_18</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Registros_id" id="6B46EA46-5E2C-C534-B5A4-66360BC3CB04">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 20:31:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0CBBECBE-1397-DA99-B1CA-AC3254443A3F" referredColumn="F1624A2B-857C-F857-AB4A-1F42A571C13F"/>
+</associations>
+</Column>
+<Column name="Empleados_id" id="9577460F-1AC9-239D-41CE-8605313CB0BB">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 20:31:29 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="21D13A3E-DF84-8B8B-EC2C-7C8A6BB08A4B" referredColumn="E78047AD-9096-D222-1A40-63C49B39C486"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="27EB074A-1E4E-B414-4CE5-89B0D411C67A" name="Personal_Registros_FK">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 20:31:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6B46EA46-5E2C-C534-B5A4-66360BC3CB04"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="396F2CC0-18D3-AF52-1079-B1510C4B764E" name="Personal_Empleados_FK">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 20:31:29 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9577460F-1AC9-239D-41CE-8605313CB0BB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Areas_Citas_FK" directorySegmentName="seg_0" id="E9DB676A-BE50-4A7E-9E96-701A32C82A3E">
+<createdBy>Smile</createdBy>
+<createdTime>2018-11-09 20:56:55 UTC</createdTime>
+<generatorID>0B877A4F-65E8-4691-F2C7-2A0E46086D00</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="7D7A7C49-C410-FCA4-9D1B-0F8730D97204" value="true"/>
+</engineerTo>
+<sourcePk>D4CDBEC5-1EF7-1600-7B8A-7CF6977C13CB</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7CD0C96A-578C-C8E1-1494-11500281C842</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E199C569-2A61-639D-A906-F756C8388099</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
