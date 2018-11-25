@@ -1,0 +1,105 @@
+/*
+    1. Elabore una consulta que traiga todas las personas que cumplan 5, 10, 15 y 20
+       años en la empresa
+*/
+select e.last_name || ' ' || e.first_name "Personas", to_char(sysdate, 'yyyy') - to_char(e.hire_date, 'yyyy') "Años cumplidos"
+from employees e
+where mod(to_char(sysdate, 'yyyy') - to_char(e.hire_date, 'yyyy'), 5) = 0 
+group by e.last_name || ' ' || e.first_name, to_char(sysdate, 'yyyy') - to_char(e.hire_date, 'yyyy');
+
+/*
+    2. Nombre del mejor pagado y el peor pagado y que imprima en cuantas veces
+       supera el sueldo el mejor pagado al peor.
+*/
+select em1.last_name "Apellido", em1.salary "Salario", 1 "Cantidad de veces"
+from employees em1 
+where em1.salary = (
+  select max(em2.salary) 
+  from employees em2
+)
+union
+select em1.last_name "Apellido", em1.salary "Salario", (
+  select round(max(em1.salary) / min(em1.salary),2) 
+  from employees em1 
+) "Cantidad de veces" 
+from employees em1 
+where em1.salary = (
+  select min(em2.salary) 
+  from employees em2
+);
+
+/*
+    3. Muestre las 3 ciudades con mayor cantidad de empleados.
+*/
+select Ciudades "Ciudades", n "Cant. empleados" 
+from (
+  select l.state_province Ciudades, count(e.last_name) n 
+  from employees e
+  join departments d using (department_id)
+  join locations l   using (location_id)
+  group by l.state_province 
+  order by count(e.last_name) desc
+)
+where rownum <= 3;
+
+/*
+    4. Muestre para cada empleado el nombre del jefe la cantidad de subordinados
+       que tienen si no tiene subordinados colocar 0.
+*/
+select em.last_name Empleado, ma.last_name Jefe, count(other.cont_emp) "Subordinados" from employees ma
+join employees em
+on (ma.employee_id = em.manager_id)
+left join (
+      select ma.employee_id emp_id, ma.last_name ma_ln, em.employee_id cont_emp from employees ma
+      join employees em
+      on (em.manager_id = ma.employee_id)
+      group by ma.employee_id, em.employee_id, ma.last_name
+) other on em.employee_id = other.emp_id
+group by ma.last_name, em.last_name, other.ma_ln;
+
+/*
+    5. Muestre para cada Job cuantos empleado lo ejercen, salario promedio, debn
+       salir todos los Jobs almacenados en la base de datos.
+*/
+select j.job_title "Job", count(e.employee_id) "Cant. empleados", nvl(avg(e.salary),0) "Salario promedio"
+from jobs j
+left join employees e
+using (job_id)
+group by j.job_title;
+
+/*
+    6. Muestre un listado que contenga solo los empleados que este año su
+       aniversario dentro de la empresa cae el mismo día de la semana que el día que
+       entraron.(ejemplo pedro perez entro el 31/10/2012 y este año 31/10/2018
+       ambas fechas fue un miercoles).
+*/
+select last_name ||' '|| first_name "Empleados"
+from employees
+where to_char(hire_date, 'Day') = to_char(add_months(hire_date, (to_char(sysdate, 'yyyy') - to_char(hire_date, 'yyyy'))*12), 'Day');
+
+/*
+    7. Muestre todos los empleados que solo han tenido un JOB dentro de la empresa
+       es decir no tiene registros en JOB_HISTORY
+*/
+select last_name ||' '|| first_name "Empleados" from (
+  select employee_id from employees
+ minus
+  select employee_id from job_history
+) join employees using (employee_id);
+
+/*
+    8. Muestre en un mismo listado:
+       Apellido Nombre Es jefe
+       Pedro Perez Si
+       Juan Camargo Si
+       Rafeal Chacon No
+*/
+select em.last_name, 
+       em.first_name, 
+       decode(sign((select count(e.employee_id) counter 
+                    from employees e
+                    where e.manager_id = em.employee_id)),
+               1, 
+            'Si',
+            'No') "Es jefe"
+from employees em;
